@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        h1 {
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1><a href="./index.html" style="color:rgb(53, 52, 52) ;">La-Citation</a></h1>
+    <hr style="width: 75%; height: 3px; background-color: rgb(53, 52, 52);">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <h2 class="text-center mt-5" style="color:rgb(53, 52, 52)">Sign In</h2>
+                <form id="signInForm">
+                    <div class="form-group">
+                        <label for="email">Email address</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control" id="password" placeholder="Password" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+                </form>
+                <div class="text-center mt-3">
+                    <a href="#">Forgot password?</a>
+                </div>
+                <div class="text-center mt-3">
+                    <p>Don't have an account? <a href="./Signup.html">Sign Up</a></p>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            // Sign in page
+            document.getElementById('signInForm').addEventListener('submit', function (event) {
+                event.preventDefault(); // Prevent the default form submission
+
+                const email = document.getElementById('email').value;
+                const password = document.getElementById('password').value;
+
+                // Here you can add your logic to handle sign-in, e.g., API call
+                console.log('Email:', email);
+                console.log('Password:', password);
+
+                // For demonstration, we'll just alert the user
+                alert('Sign In Successful!'); // Replace this with actual sign-in logic
+            }); 
+        </script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="script.js"></script>
+
+</body>
+
+</html>

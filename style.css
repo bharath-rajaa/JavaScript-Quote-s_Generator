@@ -1,0 +1,163 @@
+
+/* General Styles */
+body {
+    /* background-color: #f0f0f0; */
+    font-family: Arial, sans-serif;
+}
+
+/* Theme Button */
+#Light, #Dark {
+    transition: 0.3s ease, 0.3s ease;
+    cursor: pointer;
+    margin-top: 3px;
+}
+#Light{
+    color:black;
+    background-color: #ffffff;
+}
+#Dark{
+    color:white;
+    background-color: #000000;
+}
+#Light:hover, #Dark:hover {
+    transition: 0.3s ease, 0.3s ease;
+    transform: rotate3d(0, 1, 0, 180deg);
+    transform-origin: center;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+.pill-left {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: black;
+    display: inline-block;
+    border-radius: 100% 100% 0 0;
+    transform: rotate(-90deg);
+  }
+  .pill-right {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: White;
+    display: inline-block;
+    border-radius: 100% 100% 0 0;
+    transform: rotate(90deg);
+  }
+/* others */
+h1 {
+    /* color: white; */
+    /* color:black; */
+    text-align: center;
+    font-size: 40px;
+    margin: 30px;
+}
+
+.container {
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    opacity: 0.9;
+    transition: 0.3s ease, 0.3s ease;
+    /* color:black; */
+
+}
+
+#inside:hover {
+    transition: 0.3s ease, 0.3s ease;
+    transform: scale(1.05);
+}
+
+#quote-text {
+    font-size: 20px;
+    /* color: white; */
+    /* color:black; */
+    margin: 10px 0;
+    padding: 10px;
+    text-align: center;
+    font-weight:500;
+}
+
+#quote-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 25%;
+    margin: 10px;
+}
+
+#quote-image:hover {
+    transition: 0.3s ease, 0.3s ease;
+    transform: scale(1.05);
+}
+
+#quote-author {
+    /* color: white; */
+    /* color:black; */
+    margin: 10px 1px;
+    padding: 10px;
+    text-align: center; 
+    font-size: 25px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+/* Leader's Poster */
+.img-fluid {
+    border-radius: 10px;
+}
+
+.img-fluid:hover {
+    transition: 0.3s ease, 0.3s ease;
+    transform: scale(1.05);
+}   
+
+/* Sign-In */
+
+h2 {
+    margin-bottom: 20px;
+}
+
+
+/* Translate btn */
+
+#translate-quote, #new-quote, .btn  {
+    background: linear-gradient(to bottom, #ff37007f, #006eff7f) !important; 
+    /* color: black; */
+    cursor: pointer;
+    font-size: 13px;
+    padding: 10px 20px;
+    border: none; 
+    border-radius: 5px;
+}
+
+/* User Add Quotes */
+#AddQuote {
+    cursor: pointer;
+    font-size: 13px;
+    padding: 10px 20px;
+    border: none; 
+    border-radius: 5px;
+    justify-items: center;
+}
+#Exp{
+    font-size: 20px;
+    margin: 10px;
+    padding: 10px;
+    font-weight: 600;
+    text-align: center;
+}
+#newQuoteText, #newQuoteAuthor {
+    font-size: 30px;
+    margin: 10px;
+    border: 3px solid black;
+    border-radius: 15px;
+}
+#AddQSubmit{
+    cursor: pointer;
+    font-size: 13px;
+    padding: 10px 20px;
+    border: none; 
+    border-radius: 5px;
+    justify-items: center;
+}

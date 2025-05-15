@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalpana Chawla - Quote</title>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<style>
+    body {
+        background-color: #f0f0f0;
+        font-family: Arial, sans-serif;
+        color: #333;
+    }
+
+    h1 {
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .quote {
+        font-size: 24px;
+        text-align: center;
+        margin-top: 20px;
+        font-style: italic;
+    }
+
+    .quote::before {
+        /* content: '"'; */
+        font-size: 50px;
+        color: #ccc;
+        position: absolute;
+        left: 20px;
+        top: -20px;
+    }
+
+    .quote::after {
+        /* content: '"'; */
+        font-size: 50px;
+        color: #ccc;
+        position: absolute;
+        right: 20px;
+        bottom: -20px;
+    }
+
+    .quote img {
+        width: 200px;
+        height: auto;
+        border-radius: 10px;
+        margin-top: 20px;
+    }
+    #br{
+        display: flex;
+        align-items: center;
+        /* justify-content: center; */
+        border: 20px solid #484848;
+        padding: 2px;
+        border-radius: 50px;
+        height: 200px;
+        width: 700px;
+        /* gap: 10px; */
+    }
+</style>
+
+<body id="body">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+
+            <p style="font-size: large; margin: 2px; font-weight: bolder;">La-Citation</p>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item ms-1">
+                        <a class="nav-link fw-bold" aria-current="page" href="../index.html">Home</a>
+                    </li>
+
+                </ul>
+
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item ms-1">
+                        <a class="nav-link fw-bold" href="../About.html" target="_blank">About</a>
+                    </li>
+
+                    <li class="nav-item ms-2">
+                        <a class="nav-link" href="../Signin.html"><i class="fa-solid fa-circle-user"></i></a>
+                    </li>
+
+                    <div class="pill-left">
+                        <li class="nav-item ms-2" id="dark-mode-toggle">
+                            <i class="fa-solid fa-moon" id="Dark"></i>
+                        </li>
+                    </div>
+    
+                    <div class="pill-right">
+                        <li class="nav-item ms-2">
+                            <i class="fa-solid fa-sun" id="Light"></i>
+                        </li>
+                    </div>
+
+                </ul>
+
+            </div>
+        </div>
+
+    </nav>
+
+    <!-- Ambedkar's Page -->
+
+    <h1>Kalpana Chawla</h1>
+    <div class="img d-flex" style="text-align: center; margin-top: 40px; justify-content: space-around;" >
+        <img src="../imges/Chawla.jpeg" alt="Kalpana Chawla" style="width: 250px; height: 300px; border-radius: 10px;">
+        <div id="br" class="fw-bold" style="text-align: center; margin-top: 40px;">
+            <p>Kalpana Chawla (1962–2003) was an Indian-American astronaut and aerospace engineer. Born in Karnal,
+                India, she became the first woman of Indian origin in space. She flew on two NASA missions, STS-87 in
+                1997 and STS-107 in 2003. Tragically, she died in the Columbia disaster. Her legacy continues to inspire
+                aspiring astronauts worldwide.</p>
+        </div>
+    </div>
+    <h1>Quotes</h1>
+    <div class="quote" id="quotes-container">
+       
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="text-center mt-5">
+        <hr>
+        <p>&copy; 2025 La-Citation. All rights reserved.</p>
+        <p>Designed by La-Citation</p>
+    </footer>
+
+    <!-- Script Linkage -->
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            function displayQuotes() {
+                const quotesContainer = document.getElementById('quotes-container');
+                fetch('https://mimic-server-api.vercel.app/quotes')
+                    .then(response => response.json())
+                    .then(data => {
+                        const filteredQuotes = data.filter(quote => quote.author === 'Kalpana Chawla');
+                        quotesContainer.innerHTML = ''; // Clear existing content
+                        filteredQuotes.forEach(quote => {
+                            // Create a card for each quote
+                            const card = document.createElement('div');
+                            card.className = 'card mx-auto mb-3';
+                            card.style.width = '500px';
+                            card.style.height = 'auto';
+                            card.style.display = 'flex';
+                            quotesContainer.style.display = 'flex';
+                            quotesContainer.style.flexWrap = 'wrap';
+                            quotesContainer.style.justifyContent = 'center';
+                            card.style.margin = '10px';
+                            card.style.borderRadius = '20px';
+                            card.style.border = '10px solid #484848';
+
+
+                            const cardBody = document.createElement('div');
+                            cardBody.className = 'card-body';
+
+                            const quoteElement = document.createElement('p');
+                            quoteElement.className = 'card-text';
+                            quoteElement.textContent = `"${quote.quote}"`;
+
+                            cardBody.appendChild(quoteElement);
+                            card.appendChild(cardBody);
+                            quotesContainer.appendChild(card);
+                            // Create a translate button
+                            const translateButton = document.createElement('button');
+                            translateButton.className = 'btn btn-primary mt-2';
+                            translateButton.textContent = 'Translate';
+                            translateButton.addEventListener('click', () => {
+                                const targetLanguage = 'ta'; // Example: Tamil
+                                fetch(`https://api.mymemory.translated.net/get?q=${encodeURIComponent(quote.quote)}&langpair=en|${targetLanguage}`)
+                                    .then(response => response.json())
+                                    .then(translationData => {
+                                        if (translationData.responseData && translationData.responseData.translatedText) {
+                                            quoteElement.textContent = `"${translationData.responseData.translatedText}"`;
+                                        } else {
+                                            alert('Translation failed. Please try again.');
+                                        }
+                                    })
+                                    .catch(error => {
+                                        console.error('Error translating quote:', error);
+                                        alert('Translation failed. Please try again.');
+                                    });
+                            });
+
+                            cardBody.appendChild(translateButton);
+                        });
+                    })
+                    .catch(error => {
+                        console.error('Error fetching quotes:', error);
+                        alert('Failed to fetch quotes. Please try again.');
+                    });
+            }
+
+            // Call the function to display quotes on page load
+            displayQuotes();
+        });
+    </script>
+
+    <script src="../script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

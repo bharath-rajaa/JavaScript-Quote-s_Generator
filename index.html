@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quotes Generator</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body id="body">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+
+            <p style="font-size: large; margin: 2px; font-weight: bolder; color: rgb(53, 52, 52);">La-Citation</p>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item ms-1">
+                        <a class="nav-link fw-bold" aria-current="page" href="./index.html">Home</a>
+                    </li>
+
+                </ul>
+
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item ms-1">
+                        <a class="nav-link fw-bold" href="./About.html">About</a>
+                    </li>
+
+                    <li class="nav-item ms-2">
+                        <a class="nav-link" href="./Signin.html"><i class="fa-solid fa-circle-user"></i></a>
+                    </li>
+
+                    <div class="pill-left">
+                        <li class="nav-item ms-2" id="dark-mode-toggle">
+                            <i class="fa-solid fa-moon" id="Dark"></i>
+                        </li>
+                    </div>
+
+                    <div class="pill-right">
+                        <li class="nav-item ms-2">
+                            <i class="fa-solid fa-sun" id="Light"></i>
+                        </li>
+                    </div>
+
+                </ul>
+
+            </div>
+        </div>
+
+    </nav>
+
+    <!-- Carousel Section -->
+    <div class="container mt-5 d-flex justify-content-center flex-column align-items-center">
+        <h1 class="text-center" style="font-weight: bolder; "><i>Welcome to La-Citation</i></h1>
+        <marquee behavior="scroll" direction="" scrollamount="7" class="mt-3 mb-3">
+            <p class="text-center">
+                <i style="margin-right: 100px; font-size: large; font-weight: bolder;"> Where
+                    words inspire and ignite change.</i>
+                <i style="margin-right: 100px; font-size: large; font-weight: bolder;"> Unleash
+                    the power of inspiration.</i>
+                <i style="margin-right: 100px; font-size: large; font-weight: bolder;"> Discover
+                    the power of quotes.</i>
+                <i style="margin-right: 100px; font-size: large; font-weight: bolder;"> Explore
+                    the words of great leaders and thinkers.</i>
+            </p>
+        </marquee>
+
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./Banner/B1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./Banner/B2.webp" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./Banner/B3.webp" class="d-block w-100" alt="...">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Leader choice -->
+
+    <div class="container mt-5 d-flex justify-content-center flex-column align-items-center">
+        <h1 class="text-center" id="heading">Great Leader's</h1>
+
+        <!-- Row 1 -->
+        <div class="mt-4 d-flex justify-content-center flex-wrap">
+
+            <div class="text-center">
+                <a href="./LeadersPg/Gandhi.html"><img src="./imges/Gandhi.jpeg" alt="Leader 1"
+                        class="img-fluid mb-2 mx-3" style="height: 200px; width: 200px;"></a><br><br>
+                <a href="./LeadersPg/Gandhi.html" class="btn fs-5 fw-bold">Mahatma Gandhi</a>
+            </div>
+
+            <div class="text-center">
+                <a href="./LeadersPg/Ambedkar.html"><img src="imges/Ambedkar.jpeg" alt="Leader 2"
+                        class="img-fluid mb-2 mx-3" style="height: 200px; width: 200px;"></a><br><br>
+                <a href="./LeadersPg/Ambedkar.html" class="btn fs-5 fw-bold">B.R. Ambedkar</a>
+            </div>
+
+            <div class="text-center">
+                <a href="./LeadersPg/APJ.html"><img src="imges/APJ.jpeg" alt="Leader 3" class="img-fluid mb-2 mx-3"
+                        style="height: 200px; width: 200px;"></a><br><br>
+                <a href="./LeadersPg/APJ.html" class="btn fs-5 fw-bold">A.P.J. Abdul Kalam</a>
+            </div>
+
+            <div class="text-center ">
+                <a href="./LeadersPg/Luther.html"><img src="imges/Luther.jpeg" alt="Leader 4"
+                        class="img-fluid mb-2 mx-3" style="height: 200px; width: 200px;"></a><br><br>
+                <a href="./LeadersPg/Luther.html" class="btn fs-5 fw-bold">Martin Luther King</a>
+            </div>
+
+        </div>
+
+        <!-- Row 2 -->
+        <div class="mt-4 d-flex justify-content-center flex-wrap">
+
+            <div class="text-center">
+                <a href="./LeadersPg/Jobs.html"><img src="./imges/Steve.jpeg" alt="Leader 1" class="img-fluid mb-2 mx-3"
+                        style="height: 200px; width: 200px;"></a><br><br>
+                <a href="./LeadersPg/Jobs.html" class="btn fs-5 fw-bold">Steve Jobs</a>
+            </div>
+
+            <div class="text-center">
+                <a href="./LeadersPg/Viv.html"><img src="imges/Viv.jpeg" alt="Leader 2" class="img-fluid mb-2 mx-3"
+                        style="height: 200px; width: 200px;"></a><br><br>
+                <a href="./LeadersPg/Viv.html" class="btn fs-5 fw-bold">Swami Vivekananda</a>
+            </div>
+
+            <div class="text-center">
+                <a href="./LeadersPg/Nelson.html"><img src="imges/Nelson.jpeg" alt="Leader 3"
+                        class="img-fluid mb-2 mx-3" style="height: 200px; width: 200px;"></a><br><br>
+                <a href="./LeadersPg/Nelson.html" class="btn fs-5 fw-bold">Nelson Mandela</a>
+            </div>
+
+            <div class="text-center ">
+                <a href="./LeadersPg/Chawala.html"><img src="imges/Chawla.jpeg" alt="Leader 4"
+                        class="img-fluid mb-2 mx-3" style="height: 200px; width: 200px;"></a><br><br>
+                <a href="./LeadersPg/Chawala.html" class="btn fs-5 fw-bold">Kalpana Chawla</a>
+            </div>
+
+        </div>
+
+        <!-- Row 3 -->
+        <div class="mt-4 d-flex justify-content-center flex-wrap">
+
+            <div class="text-center">
+                <a href="./LeadersPg/Disney.html"><img src="./imges/walt.webp" alt="Leader 1"
+                        class="img-fluid mb-2 mx-3" style="height: 200px; width: 200px;"></a><br><br>
+                <a href="./LeadersPg/Disney.html" class="btn fs-5 fw-bold">Walt Disney</a>
+            </div>
+
+            <div class="text-center">
+                <a href="./LeadersPg/Albert.html"><img src="imges/Albert.webp" alt="Leader 3"
+                        class="img-fluid mb-2 mx-3" style="height: 200px; width: 200px;"></a><br><br>
+                <a href="./LeadersPg/Albert.html" class="btn fs-5 fw-bold">Albert Einstein</a>
+            </div>
+
+            <div class="text-center ">
+                <a href="./LeadersPg/Ford.html"><img src="imges/ford.jpeg" alt="Leader 4" class="img-fluid mb-2 mx-3"
+                        style="height: 200px; width: 200px;"></a><br><br>
+                <a href="./LeadersPg/Ford.html" class="btn fs-5 fw-bold">Henry Ford</a>
+            </div>
+
+            <div class="text-center">
+                <a href="./LeadersPg/Tagore.html"><img src="imges/tagore.webp" alt="Leader 2"
+                        class="img-fluid mb-2 mx-3" style="height: 200px; width: 200px;"></a><br><br>
+                <a href="./LeadersPg/Tagore.html" class="btn fs-5 fw-bold">Rabindranath Tagore</a>
+            </div>
+
+        </div>
+        
+        <!-- Row 4 -->   
+        <div class="mt-4 d-flex justify-content-center flex-wrap">
+
+            <div class="text-center">
+                <a href="./LeadersPg/User.html"><img src="imges/USER.jpeg" alt="Leader 2" class="img-fluid mb-2 mx-3"
+                        style="height: 200px; width: 200px;"></a><br><br>
+                <a href="./LeadersPg/User.html" class="btn fs-5 fw-bold">Your's</a>
+            </div>
+
+        </div>                      
+
+    </div>
+
+    <!-- QUOTE GENERATOR PART -->
+    <div class="container">
+
+        <h1 style="font-weight: bolder;">Your's Quote</h1>
+
+        <div class="quote-box">
+            <div id="inside">
+                <p id="quote-text" style="font-weight:bold"></p>
+                <p id="quote-author" style="font-weight:bold"></p>
+            </div>
+            <img id="quote-image" src="" alt="Quote Image">
+        </div>
+
+        <button id="new-quote" class="fs-5 fw-bold" style="color: rgb(50, 40, 50); ">Get New Quote</button>
+
+        <!-- Translate -->
+        <div id="google_translate_element">
+            <div class="translate-box mt-4">
+                <label for="language-select" class="form-label">Translate Quote To:</label>
+                <select id="language-select" class="form-select">
+                    <option value="en" disabled selected> Select the Language to Translate</option>
+                    <option value="ta">Tamil</option>
+                    <option value="hi">Hindi</option>
+                    <option value="es">Spanish</option>
+                    <option value="fr">French</option>
+                    <option value="de">German</option>
+                    <option value="zh">Chinese</option>
+                </select>
+                <button id="translate-quote" class="btn mt-2 fs-5 fw-bold" style="color: rgb(50, 40, 50);"
+                    onclick="translateQuote()"> Translate
+                </button>
+
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!-- USER's Quote -->
+    <div class="add-quote-form" id="AddQuote">
+        <h1 id="AddHeading">Add Quotes</h1>
+        <form id="addQuoteForm">
+            <input type="text" id="newQuoteText" placeholder="Enter the Quote" required>
+            <input type="text" id="newQuoteAuthor" placeholder="Enter author name" required>
+            <button type="submit" id="AddQSubmit">Add Quote</button>
+            <br><br>
+            <p id="Exp">Express your quotes and be Inspiration to someone.</p>
+        </form>
+    </div>
+
+
+    <!-- Footer -->
+    <hr>
+    <footer class="text-center mt-5">
+        <p>&copy; 2025 La-Citation. All rights reserved.</p>
+        <p>Designed by La-Citation</p>
+    </footer>
+
+    <!--  scripts  -->
+    <script>
+        // User's Quote
+        //    var c = document.getElementById("AddQSubmit");
+        //    var quote=document.getElementById("newQuoteText");
+        //    var author=document.getElementById("newQuoteAuthor");
+        //    c.addEventListener("click",createQuotes);
+        //     async function createQuotes(){
+        //         const response = await fetch('https://mimic-server-api.vercel.app/quotes',{
+        //             method:'POST',
+        //             headers:{
+        //                 'Content-Type':'application/json'
+        //             },
+        //             body: JSON.stringify({
+        //                   "quote":quote.value,
+        //                   "author":author.value   
+        //             })
+        //         })
+        //         console.log(response)
+        //     }  
+        //     alert("Your Quote is added successfully");
+        //     // quote.value="";
+        //     // author.value="";
+        //     // c.addEventListener("click",function(event){
+        //     //     event.preventDefault();
+        //     // });
+
+        //     createQuotes();
+
+        var c = document.getElementById("AddQSubmit");
+        var quote = document.getElementById("newQuoteText");
+        var author = document.getElementById("newQuoteAuthor");
+
+        c.addEventListener("click", async function (event) {
+            event.preventDefault(); // Prevent form submission and page reload
+
+            if (quote.value.trim() === "" || author.value.trim() === "") {
+                alert("Please fill in both the quote and author fields.");
+                return;
+            }
+
+            try {
+                const response = await fetch('https://mimic-server-api.vercel.app/quotes', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        "quote": quote.value,
+                        "author": author.value
+                    })
+                });
+
+                if (response.ok) {
+                    alert("Your Quote is added successfully");
+                    quote.value = "";
+                    author.value = "";
+                } else {
+                    alert("Failed to add the quote. Please try again.");
+                }
+            } catch (error) {
+                console.error("Error:", error);
+                alert("An error occurred. Please try again later.");
+            }
+        });
+
+    </script>
+    <script src="./script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+
+</html>
