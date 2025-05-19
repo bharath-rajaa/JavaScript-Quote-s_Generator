@@ -48,16 +48,14 @@
         border-radius: 10px;
         margin-top: 20px;
     }
-    #br{
-        display: flex;
-        align-items: center;
-        /* justify-content: center; */
-        border: 20px solid #484848;
+     #br{
+        flex-wrap: wrap;
+        justify-content: space-around;
+        border: 10px solid #484848;
         padding: 2px;
         border-radius: 50px;
-        height: 200px;
-        width: 700px;
-        /* gap: 10px; */
+        margin: 100px;
+        
     }
     </style>
 <body id="body">
@@ -113,15 +111,15 @@
     </nav>
     <!-- Ambedkar's Page -->
     
-    <h1>Dr. B.R Ambedkar</h1>
+    <h1 class="fw-bolder">Dr. B.R Ambedkar</h1>
    
-    <div class="img d-flex" style="text-align: center; margin-top: 40px; justify-content: space-around;" >
+    <div class="img" style="text-align: center; margin-top: 40px; justify-content: space-around;" >
         <img src="../imges/Ambedkar.jpeg" alt="Dr. B.R. Ambedkar" style="width: 250px; height: 300px; border-radius: 10px;">
-        <div id="br" class="fw-bold" style="text-align: center; margin-top: 40px;">
-            <p>Dr. B.R. Ambedkar (1891–1956) was an Indian jurist, economist, and social reformer. He played a key role in drafting India's Constitution and fought against caste discrimination. Born in a Dalit family, he championed equality and justice. He later embraced Buddhism, inspiring millions. He was India's first Law Minister and received the Bharat Ratna.</p>
-        </div>
     </div>
-    <h1>Quotes</h1>
+    <div id="br" class="fw-bold" style="text-align: center; margin-top: 40px;">
+        <p>Dr. B.R. Ambedkar (1891–1956) was an Indian jurist, economist, and social reformer. He played a key role in drafting India's Constitution and fought against caste discrimination. Born in a Dalit family, he championed equality and justice. He later embraced Buddhism, inspiring millions. He was India's first Law Minister and received the Bharat Ratna.</p>
+    </div>
+    <h1 class="fw-bolder">Quotes</h1>
     <div class="quote" id="quotes-container">
        
     </div>

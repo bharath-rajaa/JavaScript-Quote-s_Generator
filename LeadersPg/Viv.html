@@ -48,15 +48,13 @@
         margin-top: 20px;
     }
     #br{
-        display: flex;
-        align-items: center;
-        /* justify-content: center; */
-        border: 20px solid #484848;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        border: 10px solid #484848;
         padding: 2px;
         border-radius: 50px;
-        height: 200px;
-        width: 700px;
-        /* gap: 10px; */
+        margin: 100px;
+        
     }
     </style>
 <body id="body">
@@ -113,14 +111,14 @@
 
     <!-- Swami Vivekananda's Page -->
     
-    <h1>Swami Vivekananda</h1>
-    <div class="img d-flex" style="text-align: center; margin-top: 40px; justify-content: space-around;" >
+    <h1 class="fw-bolder">Swami Vivekananda</h1>
+    <div class="img" style="text-align: center; margin-top: 40px; justify-content: space-around;" >
         <img src="../imges/Viv.jpeg" alt="Kalpana Chawla" style="width: 250px; height: 300px; border-radius: 10px;">
-        <div id="br" class="fw-bold" style="text-align: center; margin-top: 40px;">
-            <p>Swami Vivekananda (1863–1902) was an Indian Hindu monk and philosopher. A disciple of Ramakrishna, he introduced Vedanta and Yoga to the West. His famous speech at the 1893 Parliament of Religions in Chicago emphasized religious tolerance. He founded the Ramakrishna Mission, promoting education and social service. His teachings inspire millions today.</p>
-        </div>
     </div>
-    <h1>Quotes</h1>
+    <div id="br" class="fw-bold " style="text-align: center; margin-top: 50px;">
+        <p>Swami Vivekananda (1863–1902) was an Indian Hindu monk and philosopher. A disciple of Ramakrishna, he introduced Vedanta and Yoga to the West. His famous speech at the 1893 Parliament of Religions in Chicago emphasized religious tolerance. He founded the Ramakrishna Mission, promoting education and social service. His teachings inspire millions today.</p>
+    </div>
+    <h1 class="fw-bolder">Quotes</h1>
     <div class="quote" id="quotes-container">
        
     </div>

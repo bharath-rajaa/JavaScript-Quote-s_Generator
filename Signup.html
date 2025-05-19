@@ -19,13 +19,13 @@
             margin-top: 20px;
             font-size: 18px;
             color: rgb(53, 52, 52);
-            border: 8px solid;
+            /* border: 8px solid; */
             background: linear-gradient(to bottom, #ff37007f, #006eff7f) !important;
             color: white;
             font-weight: bold;
             padding: 10px 20px;
             text-decoration: none;
-            border-radius: 5px;
+            border-radius: 5px; 
             display: inline-block;
             transition: background-color 0.3s, color 0.3s;
 
@@ -40,11 +40,8 @@
     <hr style="width: 75%; height: 3px; background-color: rgb(53, 52, 52);">
     <div class="container mt-5">
         <div class="row justify-content-center">
-            <div class="col-md-6">
-                <div class="card">
-                    <div class="card-header text-center">
-                        <h3 style="color: rgb(53, 52, 52);">Sign Up</h3>
-                    </div>
+            <div class="col-md-7">
+                    <h2 style="color: rgb(53, 52, 52);">Sign Up</h2>
                     <div class="card-body">
                         <form id="signupForm">
                             <div class="form-group">
@@ -70,7 +67,7 @@
                         </form>
                         <a id="Back" href="./index.html">BACK TO HOME</a>
                     </div>
-                </div>
+                
             </div>
         </div>
     </div>
@@ -90,6 +87,9 @@
             }
 
             alert(`Sign-up successful!\nUsername: ${username}\nEmail: ${email}`);
+
+            // alert('Sign up successful! Return to home page.');
+            window.location.href = "./index.html";
         });
     </script>
 

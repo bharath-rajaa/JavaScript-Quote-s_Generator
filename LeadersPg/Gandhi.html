@@ -54,15 +54,13 @@
         margin-top: 20px;
     }
     #br{
-        display: flex;
-        align-items: center;
-        /* justify-content: center; */
-        border: 20px solid #484848;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        border: 10px solid #484848;
         padding: 2px;
         border-radius: 50px;
-        height: 200px;
-        width: 700px;
-        /* gap: 10px; */
+        margin: 100px;
+        
     }
 </style>
 
@@ -120,14 +118,14 @@
 
     <!-- Gandhi's Page -->
 
-    <h1>Mahatma Gandhi Ji</h1>
-    <div class="img d-flex" style="text-align: center; margin-top: 40px; justify-content: space-around;" >
+    <h1 class="fw-bolder">Mahatma Gandhi Ji</h1>
+    <div class="img" style="text-align: center; margin-top: 40px; justify-content: space-around;" >
         <img src="../imges/Gandhi.jpeg" alt="Kalpana Chawla" style="width: 250px; height: 300px; border-radius: 10px;">
-        <div id="br" class="fw-bold" style="text-align: center; margin-top: 40px;">
-            <p>Mahatma Gandhi (1869–1948) was an Indian freedom fighter and political ethicist. He led India's struggle for independence through nonviolent resistance. Born in Porbandar, Gujarat, he studied law in England and fought against racial discrimination in South Africa. He spearheaded movements like the Salt March and Quit India. Assassinated in 1948, he remains an enduring symbol of peace and justice.</p>
-        </div>
     </div>
-    <h1>Quotes</h1>
+    <div id="br" class="fw-bold" style="text-align: center; margin-top: 50px;">
+        <p>Mahatma Gandhi (1869–1948) was an Indian freedom fighter and political ethicist. He led India's struggle for independence through nonviolent resistance. Born in Porbandar, Gujarat, he studied law in England and fought against racial discrimination in South Africa. He spearheaded movements like the Salt March and Quit India. Assassinated in 1948, he remains an enduring symbol of peace and justice.</p>
+    </div>
+    <h1 class="fw-bolder">Quotes</h1>
     <div class="quote" id="quotes-container">
        
     </div>

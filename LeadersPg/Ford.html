@@ -53,16 +53,14 @@
         border-radius: 10px;
         margin-top: 20px;
     }
-    #br{
-        display: flex;
-        align-items: center;
-        /* justify-content: center; */
-        border: 20px solid #484848;
+     #br{
+        flex-wrap: wrap;
+        justify-content: space-around;
+        border: 10px solid #484848;
         padding: 2px;
         border-radius: 50px;
-        height: 200px;
-        width: 700px;
-        /* gap: 10px; */
+        margin: 100px;
+        
     }
 </style>
 
@@ -121,11 +119,11 @@
     <!--  Ford's Page -->
 
     <h1>Henry Ford</h1>
-    <div class="img d-flex" style="text-align: center; margin-top: 40px; justify-content: space-around;" >
+    <div class="img" style="text-align: center; margin-top: 40px; justify-content: space-around;" >
         <img src="../imges/ford.jpeg" alt="Ford" style="width: 250px; height: 300px; border-radius: 10px;">
-        <div id="br" class="fw-bold" style="text-align: center; margin-top: 40px;">
-            <p>Henry Ford (1863–1947) was an American industrialist and founder of Ford Motor Company. He revolutionized automobile manufacturing with the assembly line, making cars affordable for the masses. His Model T transformed transportation. Ford also introduced the five-day workweek. His innovations shaped modern industry, but his legacy includes controversial views as well.</p>
-        </div>
+    </div>
+    <div id="br" class="fw-bold" style="text-align: center; margin-top: 50px;">
+        <p>Henry Ford (1863–1947) was an American industrialist and founder of Ford Motor Company. He revolutionized automobile manufacturing with the assembly line, making cars affordable for the masses. His Model T transformed transportation. Ford also introduced the five-day workweek. His innovations shaped modern industry, but his legacy includes controversial views as well.</p>
     </div>
     <h1>Quotes</h1>
     <div class="quote" id="quotes-container">

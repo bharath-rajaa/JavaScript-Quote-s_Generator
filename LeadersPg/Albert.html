@@ -54,15 +54,13 @@
         margin-top: 20px;
     }
     #br{
-        display: flex;
-        align-items: center;
-        /* justify-content: center; */
-        border: 20px solid #484848;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        border: 10px solid #484848;
         padding: 2px;
         border-radius: 50px;
-        height: 200px;
-        width: 700px;
-        /* gap: 10px; */
+        margin: 100px;
+        
     }
 </style>
 
@@ -120,14 +118,14 @@
 
     <!-- Rabindranath Tagore's Page -->
 
-    <h1>Albert Einstein</h1>
-    <div class="img d-flex" style="text-align: center; margin-top: 40px; justify-content: space-around;" >
+    <h1 class="fw-bolder">Albert Einstein</h1>
+    <div class="img d-flex" style="text-align: center; margin-top: 50px; justify-content: space-around;" >
         <img src="../imges/Albert.webp" alt="Einstein" style="width: 250px; height: 300px; border-radius: 10px;">
-        <div id="br" class="fw-bold" style="text-align: center; margin-top: 40px;">
-            <p>Albert Einstein (1879–1955) was a German-born theoretical physicist who developed the theory of relativity. His equation *E = mc²* revolutionized science. He won the Nobel Prize in Physics (1921) for his work on the photoelectric effect. Einstein's contributions shaped modern physics, and his legacy continues to inspire scientific discovery.</p>
-        </div>
     </div>
-    <h1>Quotes</h1>
+    <div id="br" class="fw-bold" style="text-align: center; margin-top: 40px;">
+        <p>Albert Einstein (1879–1955) was a German-born theoretical physicist who developed the theory of relativity. His equation *E = mc²* revolutionized science. He won the Nobel Prize in Physics (1921) for his work on the photoelectric effect. Einstein's contributions shaped modern physics, and his legacy continues to inspire scientific discovery.</p>
+    </div>
+    <h1 class="fw-bolder">Quotes</h1>
     <div class="quote" id="quotes-container">
        
     </div>

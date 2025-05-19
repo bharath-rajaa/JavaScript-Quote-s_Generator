@@ -20,7 +20,7 @@
     <hr style="width: 75%; height: 3px; background-color: rgb(53, 52, 52);">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-md-6">
+            <div class="col-md-7">
                 <h2 class="text-center mt-5" style="color:rgb(53, 52, 52)">Sign In</h2>
                 <form id="signInForm">
                     <div class="form-group">
@@ -34,7 +34,7 @@
                     <button type="submit" class="btn btn-primary btn-block">Sign In</button>
                 </form>
                 <div class="text-center mt-3">
-                    <a href="#">Forgot password?</a>
+                    <!-- <a href="">Forgot password?</a> -->
                 </div>
                 <div class="text-center mt-3">
                     <p>Don't have an account? <a href="./Signup.html">Sign Up</a></p>
@@ -54,8 +54,9 @@
                 console.log('Email:', email);
                 console.log('Password:', password);
 
-                // For demonstration, we'll just alert the user
-                alert('Sign In Successful!'); // Replace this with actual sign-in logic
+                // Show alert message and redirection
+                alert('Sign in successful! Return to home page.');
+                window.location.href = "./index.html";
             }); 
         </script>
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

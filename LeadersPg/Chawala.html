@@ -54,15 +54,13 @@
         margin-top: 20px;
     }
     #br{
-        display: flex;
-        align-items: center;
-        /* justify-content: center; */
-        border: 20px solid #484848;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        border: 10px solid #484848;
         padding: 2px;
         border-radius: 50px;
-        height: 200px;
-        width: 700px;
-        /* gap: 10px; */
+        margin: 100px;
+        
     }
 </style>
 
@@ -120,17 +118,17 @@
 
     <!-- Ambedkar's Page -->
 
-    <h1>Kalpana Chawla</h1>
-    <div class="img d-flex" style="text-align: center; margin-top: 40px; justify-content: space-around;" >
+    <h1 class="fw-bolder">Kalpana Chawla</h1>
+    <div class="img" style="text-align: center; margin-top: 40px; justify-content: space-around;" >
         <img src="../imges/Chawla.jpeg" alt="Kalpana Chawla" style="width: 250px; height: 300px; border-radius: 10px;">
-        <div id="br" class="fw-bold" style="text-align: center; margin-top: 40px;">
-            <p>Kalpana Chawla (1962–2003) was an Indian-American astronaut and aerospace engineer. Born in Karnal,
-                India, she became the first woman of Indian origin in space. She flew on two NASA missions, STS-87 in
-                1997 and STS-107 in 2003. Tragically, she died in the Columbia disaster. Her legacy continues to inspire
-                aspiring astronauts worldwide.</p>
-        </div>
     </div>
-    <h1>Quotes</h1>
+    <div id="br" class="fw-bold" style="text-align: center; margin-top: 50px;">
+        <p>Kalpana Chawla (1962–2003) was an Indian-American astronaut and aerospace engineer. Born in Karnal,
+            India, she became the first woman of Indian origin in space. She flew on two NASA missions, STS-87 in
+            1997 and STS-107 in 2003. Tragically, she died in the Columbia disaster. Her legacy continues to inspire
+            aspiring astronauts worldwide.</p>
+    </div>
+    <h1 class="fw-bolder">Quotes</h1>
     <div class="quote" id="quotes-container">
        
     </div>

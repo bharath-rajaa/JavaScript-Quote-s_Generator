@@ -47,16 +47,14 @@
         border-radius: 10px;
         margin-top: 20px;
     }
-    #br{
-        display: flex;
-        align-items: center;
-        /* justify-content: center; */
-        border: 20px solid #484848;
+     #br{
+        flex-wrap: wrap;
+        justify-content: space-around;
+        border: 10px solid #484848;
         padding: 2px;
         border-radius: 50px;
-        height: 200px;
-        width: 700px;
-        /* gap: 10px; */
+        margin: 100px;
+        
     }
     </style>
 <body id="body">
@@ -113,14 +111,14 @@
 
     <!-- Ambedkar's Page -->
     
-    <h1>Steve Jobs</h1>
-    <div class="img d-flex" style="text-align: center; margin-top: 40px; justify-content: space-around;" >
+    <h1 class="fw-bolder">Steve Jobs</h1>
+    <div class="img" style="text-align: center; margin-top: 40px; justify-content: space-around;" >
         <img src="../imges/Steve.jpeg" alt="Kalpana Chawla" style="width: 250px; height: 300px; border-radius: 10px;">
-        <div id="br" class="fw-bold" style="text-align: center; margin-top: 40px;">
-            <p>Steve Jobs (1955–2011) was an American entrepreneur and co-founder of Apple Inc. He revolutionized personal computing, smartphones, and digital entertainment. Jobs also led Pixar Animation Studios and played a key role in its success. Known for his visionary leadership, he introduced iconic products like the iPhone, iPad, and Mac, shaping modern technology.</p>
-        </div>
     </div>
-    <h1>Quotes</h1>
+    <div id="br" class="fw-bold" style="text-align: center; margin-top: 50px;">
+        <p>Steve Jobs (1955–2011) was an American entrepreneur and co-founder of Apple Inc. He revolutionized personal computing, smartphones, and digital entertainment. Jobs also led Pixar Animation Studios and played a key role in its success. Known for his visionary leadership, he introduced iconic products like the iPhone, iPad, and Mac, shaping modern technology.</p>
+    </div>
+    <h1 class="fw-bolder">Quotes</h1>
     <div class="quote" id="quotes-container">
        
     </div>

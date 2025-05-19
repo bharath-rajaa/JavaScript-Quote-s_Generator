@@ -48,15 +48,12 @@
         margin-top: 20px;
     }
     #br{
-        display: flex;
-        align-items: center;
-        /* justify-content: center; */
-        border: 20px solid #484848;
+       flex-wrap: wrap;
+        justify-content: space-around;
+        border: 10px solid #484848;
         padding: 2px;
         border-radius: 50px;
-        height: 200px;
-        width: 700px;
-        /* gap: 10px; */
+        margin: 100px;
     }
     </style>
 <body id="body">
@@ -113,13 +110,14 @@
 
     <!-- Swami Vivekananda's Page -->
     
-    <h1>User's Quotes</h1>
-    <div class="img d-flex" style="text-align: center; margin-top: 40px; justify-content: space-around;" >
+    <h1 class="fw-bolder">User's</h1>
+    <div class="img" style="text-align: center; margin-top: 40px; justify-content: space-around;" >
         <img src="../imges/USER.jpeg" alt="Kalpana Chawla" style="width: 250px; height: 300px; border-radius: 10px;">
-        <div id="br" class="fw-bold" style="text-align: center; margin-top: 40px;">
-            <p>Self-motivated individuals inspire themselves to achieve their goals and overcome challenges with determination and passion.</p>
-        </div>
     </div>
+    <div id="br" class="fw-bold" style="text-align: center; margin-top: 50px;">
+        <p>Self-motivated individuals inspire themselves to achieve their goals and overcome challenges with determination and passion.</p>
+    </div>
+    <h1 class="fw-bolder">Quotes</h1>
     <div class="quote" id="quotes-container">
        
     </div>
@@ -140,7 +138,7 @@
             fetch('https://mimic-server-api.vercel.app/quotes')
                 .then(response => response.json())
                 .then(data => {
-                    const excludedAuthors = ['A.P.J. Abdul Kalam', 'Swami Vivekananda', 'Steve Jobs', 'Nelson Mandela', 'Albert Einstein', 'Mahatma Gandhi', 'Martin Luther King Jr.', 'Walt Disney', 'Henry Ford', 'Rabindranath Tagore','Dr. B.R. Ambedkar', 'Kalpana Chawla','Indira Gandhi','Eleanor Roosevelt','Confucius','Ralph Waldo Emerson' ];
+                    const excludedAuthors = ['A.P.J. Abdul Kalam', 'Swami Vivekananda', 'Steve Jobs', 'Nelson Mandela', 'Albert Einstein', 'Mahatma Gandhi', 'Martin Luther King Jr.', 'Walt Disney', 'Henry Ford', 'Rabindranath Tagore','Dr. B.R. Ambedkar', 'Kalpana Chawla','Indira Gandhi','Eleanor Roosevelt','Confucius','Ralph Waldo Emerson'];
                     const filteredQuotes = data.filter(quote => !excludedAuthors.includes(quote.author));
                     quotesContainer.innerHTML = ''; // Clear existing content
                     filteredQuotes.forEach(quote => {

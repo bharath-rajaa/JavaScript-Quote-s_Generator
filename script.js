@@ -38,6 +38,7 @@ lightTheme.addEventListener("click", () => {
     applyTheme("light");
 });
 
+// Fetch a random quote from the API and update the DOM
 async function fetchQuote() {
     try {
         const response = await fetch('https://mimic-server-api.vercel.app/quotes');

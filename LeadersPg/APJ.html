@@ -53,18 +53,16 @@
         border-radius: 10px;
         margin-top: 20px;
     }
-    #br{
-        display: flex;
-        align-items: center;
-        /* justify-content: center; */
-        border: 20px solid #484848;
+     #br{
+        flex-wrap: wrap;
+        justify-content: space-around;
+        border: 10px solid #484848;
         padding: 2px;
         border-radius: 50px;
-        height: 200px;
-        width: 700px;
-        /* gap: 10px; */
+        margin: 100px;
+        
     }
-</style>
+    </style>
 
 <body id="body">
     <!-- Navbar -->
@@ -120,20 +118,20 @@
 
     <!-- Ambedkar's Page -->
 
-    <h1>Dr. A.P.J. Abdul Kalam </h1>
+    <h1 class="fw-bolder">Dr. A.P.J. Abdul Kalam </h1>
     
-    <div class="img d-flex" style="text-align: center; margin-top: 40px; justify-content: space-around;" >
+    <div class="img" style="text-align: center; margin-top: 40px; justify-content: space-around;" >
         <img src="../imges/APJ.jpeg" alt="APJ" style="width: 250px; height: 300px; border-radius: 10px;">
-        <div id="br" class="fw-bold" style="text-align: center; margin-top: 40px;">
-            <p>Dr. A.P.J. Abdul Kalam (1931–2015) was an Indian aerospace scientist and the 11th President of India
-                (2002–2007). Born in Rameswaram, Tamil Nadu, he played a key role in India's missile development and
-                nuclear
-                tests. Known as the "Missile Man," he received the Bharat Ratna and inspired millions with his vision
-                for
-                India's future</p>
-        </div>
     </div>
-    <h1>Quotes</h1>
+    <div id="br" class="fw-bold" style="text-align: center; margin-top: 40px;">
+        <p>Dr. A.P.J. Abdul Kalam (1931–2015) was an Indian aerospace scientist and the 11th President of India
+            (2002–2007). Born in Rameswaram, Tamil Nadu, he played a key role in India's missile development and
+            nuclear
+            tests. Known as the "Missile Man," he received the Bharat Ratna and inspired millions with his vision
+            for
+            India's future</p>
+    </div>
+    <h1 class="fw-bolder">Quotes</h1>
     <div class="quote" id="quotes-container">
        
     </div>

@@ -47,16 +47,14 @@
         border-radius: 10px;
         margin-top: 20px;
     }
-    #br{
-        display: flex;
-        align-items: center;
-        /* justify-content: center; */
-        border: 20px solid #484848;
+     #br{
+        flex-wrap: wrap;
+        justify-content: space-around;
+        border: 10px solid #484848;
         padding: 2px;
         border-radius: 50px;
-        height: 200px;
-        width: 700px;
-        /* gap: 10px; */
+        margin: 100px;
+        
     }
     </style>
 <body id="body">
@@ -113,14 +111,14 @@
 
     <!-- Martin Luther King Jr's Page -->
     
-    <h1>Martin Luther King Jr.</h1>
-    <div class="img d-flex" style="text-align: center; margin-top: 40px; justify-content: space-around;" >
+    <h1 class="fw-bolder">Martin Luther King Jr.</h1>
+    <div class="img" style="text-align: center; margin-top: 40px; justify-content: space-around;" >
         <img src="../imges/Luther.jpeg" alt="Kalpana Chawla" style="width: 250px; height: 300px; border-radius: 10px;">
-        <div id="br" class="fw-bold" style="text-align: center; margin-top: 40px;">
-            <p>Martin Luther King Jr. (1929–1968) was an American civil rights leader and Baptist minister. He championed racial equality through nonviolent resistance, inspired by Mahatma Gandhi. His famous "I Have a Dream" speech in 1963 became a defining moment. Awarded the Nobel Peace Prize in 1964, he was assassinated in 1968.</p>
-        </div>
     </div>
-    <h1>Quotes</h1>
+    <div id="br" class="fw-bold" style="text-align: center; margin-top: 50px;">
+        <p>Martin Luther King Jr. (1929–1968) was an American civil rights leader and Baptist minister. He championed racial equality through nonviolent resistance, inspired by Mahatma Gandhi. His famous "I Have a Dream" speech in 1963 became a defining moment. Awarded the Nobel Peace Prize in 1964, he was assassinated in 1968.</p>
+    </div>
+    <h1 class="fw-bolder">Quotes</h1>
     <div class="quote" id="quotes-container">
        
     </div>

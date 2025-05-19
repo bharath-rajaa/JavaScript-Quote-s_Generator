@@ -53,16 +53,14 @@
         border-radius: 10px;
         margin-top: 20px;
     }
-    #br{
-        display: flex;
-        align-items: center;
-        /* justify-content: center; */
-        border: 20px solid #484848;
+     #br{
+        flex-wrap: wrap;
+        justify-content: space-around;
+        border: 10px solid #484848;
         padding: 2px;
         border-radius: 50px;
-        height: 200px;
-        width: 700px;
-        /* gap: 10px; */
+        margin: 100px;
+        
     }
 </style>
 
@@ -120,14 +118,14 @@
 
     <!-- Nelson's Page -->
 
-    <h1>Nelson Mandela</h1>
-    <div class="img d-flex" style="text-align: center; margin-top: 40px; justify-content: space-around;" >
+    <h1 class="fw-bolder">Nelson Mandela</h1>
+    <div class="img" style="text-align: center; margin-top: 40px; justify-content: space-around;" >
         <img src="../imges/Nelson.jpeg" alt="Kalpana Chawla" style="width: 250px; height: 300px; border-radius: 10px;">
-        <div id="br" class="fw-bold" style="text-align: center; margin-top: 40px;">
-            <p>Nelson Mandela (1918–2013) was a South African anti-apartheid revolutionary and the country's first Black president (1994–1999). Imprisoned for 27 years, he led the fight against racial segregation. His leadership helped dismantle apartheid, earning him the Nobel Peace Prize in 1993. Mandela remains a global symbol of justice and reconciliation.</p>
-        </div>
     </div>
-    <h1>Quotes</h1>
+    <div id="br" class="fw-bold" style="text-align: center; margin-top: 50px;">
+        <p>Nelson Mandela (1918–2013) was a South African anti-apartheid revolutionary and the country's first Black president (1994–1999). Imprisoned for 27 years, he led the fight against racial segregation. His leadership helped dismantle apartheid, earning him the Nobel Peace Prize in 1993. Mandela remains a global symbol of justice and reconciliation.</p>
+    </div>
+    <h1 class="fw-bolder">Quotes</h1>
     <div class="quote" id="quotes-container">
        
     </div>
